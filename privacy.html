@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solar Clock Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #fdfaf3; --fg: #1f1b16; --muted: #574f45; --accent: #a85a00; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #17150f; --fg: #f1ece2; --muted: #c4bbac; --accent: #f0a640; }
+    }
+    body {
+      margin: 0 auto; max-width: 42rem; padding: 2rem 1rem 3rem;
+      background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, sans-serif;
+    }
+    h1 { font-size: 1.8rem; margin-bottom: 0.2rem; }
+    h2 { font-size: 1.15rem; margin-top: 2rem; }
+    .muted { color: var(--muted); }
+    a { color: var(--accent); }
+    table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+    th, td { text-align: left; vertical-align: top; padding: 0.5rem 0.6rem 0.5rem 0; border-bottom: 1px solid color-mix(in srgb, var(--muted) 30%, transparent); }
+  </style>
+</head>
+<body>
+  <h1>Solar Clock Privacy Policy</h1>
+  <p class="muted">Effective November 14, 2026</p>
+
+  <p>Solar Clock is a Chrome extension that shows the time on a solar clock,
+    where sunrise is always 6:00 and sunset is always 18:00. To do that it
+    needs to know roughly where you are. This page explains what it does with
+    that information.</p>
+
+  <h2>The short version</h2>
+  <ul>
+    <li>Your location is used only to calculate the clock, the sun, the moon
+      and the seasons, and to show your place name.</li>
+    <li>Everything Solar Clock saves stays in your browser, on your device.</li>
+    <li>There are no accounts, ads, analytics or tracking. The developer never
+      receives any of your data, and nothing is sold or shared for any other
+      purpose.</li>
+    <li>Two map services receive the minimum needed to name places and search
+      for them, as described below.</li>
+  </ul>
+
+  <h2>Your location</h2>
+  <p>If you allow it, Solar Clock asks Chrome for your current location. All
+    the clock, sun, moon and season calculations run inside the extension, on
+    your device. Instead of sharing your location, you can search for a place
+    and use that.</p>
+
+  <h2>What is sent to other services</h2>
+  <table>
+    <tr><th>Service</th><th>When</th><th>What it receives</th></tr>
+    <tr>
+      <td><a href="https://nominatim.openstreetmap.org">Nominatim</a>
+        (OpenStreetMap Foundation)</td>
+      <td>To show the name of the place at your location</td>
+      <td>Your coordinates and your browser's language</td>
+    </tr>
+    <tr>
+      <td><a href="https://photon.komoot.io">Photon</a> (Komoot)</td>
+      <td>When you search for a place</td>
+      <td>What you type, your browser's language, and the location currently
+        shown (to list nearby matches first)</td>
+    </tr>
+  </table>
+  <p>These requests go straight from your browser to those services, so like
+    any website they also see your IP address. Their own policies apply:
+    <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation privacy policy</a>,
+    <a href="https://www.komoot.com/privacy">Komoot privacy policy</a>.
+    Nothing else is sent anywhere.</p>
+
+  <h2>What is saved on your device</h2>
+  <p>Solar Clock uses Chrome's extension storage, which stays in your browser
+    profile, to remember:</p>
+  <ul>
+    <li>your last known location and its place name, so the clock appears
+      right away next time</li>
+    <li>a place you chose by searching, if you did</li>
+    <li>whether the clock is popped out into its own window, and where that
+      window was</li>
+  </ul>
+  <p>Removing the extension deletes all of this.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Location</strong> (<code>geolocation</code>): to find where you
+      are, so the clock matches your sunrise and sunset.</li>
+    <li><strong>Storage</strong> (<code>storage</code>): to save the settings
+      above on your device.</li>
+  </ul>
+  <p>Solar Clock does not read or change the web pages you visit.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted on this page with
+    a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions? Email Positively Paul at
+    <a href="mailto:dataoutlaw@gmail.com">dataoutlaw@gmail.com</a>.</p>
+</body>
+</html>
